@@ -1,0 +1,9 @@
+---
+- name: shut the tomcat
+  command: tomcatdown
+  args:
+    chdir: /usr/local/bin
+- name: run shell command to start tomcat
+  command: tomcatup
+  args:
+    chdir: /usr/local/bin
